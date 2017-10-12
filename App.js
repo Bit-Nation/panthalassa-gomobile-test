@@ -20,7 +20,11 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-console.log(NativeModules.ChatBackend);
+//Will log data about the system volume to console
+NativeModules.ChatBackend.getSystemVolume(function(err, volume){
+    console.log(err);
+    console.log(volume);
+});
 
 export default class App extends Component<{}> {
   render() {
