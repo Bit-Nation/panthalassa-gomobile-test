@@ -6,10 +6,11 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
+    Platform,
+    StyleSheet,
+    Text,
+    View,
+    NativeModules
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -18,6 +19,8 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
+
+console.log(NativeModules.ChatBackend);
 
 export default class App extends Component<{}> {
   render() {
