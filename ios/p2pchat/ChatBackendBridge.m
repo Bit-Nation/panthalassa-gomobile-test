@@ -7,6 +7,7 @@
 //
 #import <AVFoundation/AVFoundation.h>
 #import "ChatBackendBridge.h"
+#import "ChatBackend/ChatBackend.h"
 
 @implementation ChatBackendBridge
 
