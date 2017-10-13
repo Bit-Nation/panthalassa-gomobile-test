@@ -21,7 +21,7 @@ const instructions = Platform.select({
 });
 
 //Will log data about the system volume to console
-NativeModules.ChatBackend.getSystemVolume(function(err, volume){
+NativeModules.ChatBackendBridge.getSystemVolume(function(err, volume){
     console.log(err);
     console.log(volume);
 });

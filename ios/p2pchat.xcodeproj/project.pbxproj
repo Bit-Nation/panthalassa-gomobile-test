@@ -24,10 +24,10 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		17559B961F8F664500167917 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		17AF55F51F8FCE2900A0FD95 /* ChatBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AF55F41F8FCE2900A0FD95 /* ChatBackend.framework */; };
-		17C4B6701F8FD2C300FC6AB4 /* ChatBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */; };
-		17C4B6711F8FD2C300FC6AB4 /* ChatBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */; };
-		17C4B6721F8FD2C300FC6AB4 /* ChatBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */; };
-		17C4B6731F8FD2C300FC6AB4 /* ChatBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */; };
+		17C4B6701F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */; };
+		17C4B6711F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */; };
+		17C4B6721F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */; };
+		17C4B6731F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -313,8 +313,8 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = p2pchat/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		17AF55F41F8FCE2900A0FD95 /* ChatBackend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChatBackend.framework; path = Frameworks/ChatBackend.framework; sourceTree = "<group>"; };
-		17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatBackend.m; path = p2pchat/ChatBackend.m; sourceTree = "<group>"; };
-		17C4B6741F8FD2E300FC6AB4 /* ChatBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatBackend.h; path = p2pchat/ChatBackend.h; sourceTree = "<group>"; };
+		17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatBackendBridge.m; path = p2pchat/ChatBackendBridge.m; sourceTree = "<group>"; };
+		17C4B6741F8FD2E300FC6AB4 /* ChatBackendBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatBackendBridge.h; path = p2pchat/ChatBackendBridge.h; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* p2pchat-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "p2pchat-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* p2pchat-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "p2pchat-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -466,8 +466,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				17C4B66F1F8FD2C300FC6AB4 /* ChatBackend.m */,
-				17C4B6741F8FD2E300FC6AB4 /* ChatBackend.h */,
+				17C4B66F1F8FD2C300FC6AB4 /* ChatBackendBridge.m */,
+				17C4B6741F8FD2E300FC6AB4 /* ChatBackendBridge.h */,
 			);
 			name = p2pchat;
 			sourceTree = "<group>";
@@ -1053,7 +1053,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C4B6711F8FD2C300FC6AB4 /* ChatBackend.m in Sources */,
+				17C4B6711F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */,
 				00E356F31AD99517003FC87E /* p2pchatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1063,7 +1063,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				17C4B6701F8FD2C300FC6AB4 /* ChatBackend.m in Sources */,
+				17C4B6701F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1073,7 +1073,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				17C4B6721F8FD2C300FC6AB4 /* ChatBackend.m in Sources */,
+				17C4B6721F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1082,7 +1082,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C4B6731F8FD2C300FC6AB4 /* ChatBackend.m in Sources */,
+				17C4B6731F8FD2C300FC6AB4 /* ChatBackendBridge.m in Sources */,
 				2DCD954D1E0B4F2C00145EB5 /* p2pchatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

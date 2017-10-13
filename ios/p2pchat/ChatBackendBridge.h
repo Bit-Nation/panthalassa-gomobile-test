@@ -1,5 +1,5 @@
 //
-//  ChatBackend.h
+//  ChatBackendBridge.h
 //  p2pchat
 //
 //  Created by Florian Lenz on 12.10.17.
@@ -7,10 +7,10 @@
 //
 #import <React/RCTBridgeModule.h>
 
-#ifndef ChatBackend_h
-#define ChatBackend_h
+#ifndef ChatBackendBridge_h
+#define ChatBackendBridge_h
 
-@interface ChatBackend : NSObject <RCTBridgeModule>
+@interface ChatBackendBridge : NSObject <RCTBridgeModule>
 @end
 
 #endif
