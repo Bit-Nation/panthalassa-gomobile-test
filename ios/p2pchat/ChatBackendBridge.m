@@ -13,9 +13,8 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(getSystemVolume:(RCTResponseSenderBlock)callback) {
-  AVAudioSession *session = [AVAudioSession sharedInstance];
-  callback(@[[NSNull null], @([session outputVolume])]);
+RCT_EXPORT_METHOD(greet:(RCTResponseSenderBlock)callback) {
+  callback(@[[NSNull null], ChatBackendGreet()]);
 }
 
 @end
