@@ -1,0 +1,8 @@
+framework module "ChatBackend" {
+	header "ref.h"
+    header "ChatBackend.objc.h"
+    header "Universe.objc.h"
+    header "ChatBackend.h"
+
+    export *
+}
